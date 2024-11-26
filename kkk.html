@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212; /* Dark background */
+      color: #e0e0e0; /* Light text color */
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    /* Header */
+    header {
+      background: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-style: italic;
+      color: #90caf9; /* Accent color */
+    }
+
+    /* Navigation */
+    nav {
+      background: #212121;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0 1rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #e0e0e0;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #90caf9;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 0;
+      background-color: #1e1e1e;
+    }
+
+    .hero img.profile-picture {
+      max-width: 500px;
+      border-radius: 40%;
+      border: 3px solid #90caf9;
+      margin-right: 2rem;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      color: #90caf9;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      background: #90caf9;
+      color: #121212;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #64b5f6;
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 4rem 0;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #90caf9;
+      margin-bottom: 1rem;
+    }
+
+    /* Portfolio Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #1e1e1e;
+      color: #e0e0e0;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Natani Getnet</h1>
+      <p>Computer Science Student</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div style="display: flex; align-items: center;">
+          <img src="https://th.bing.com/th/id/OIP.ioiw46WmCBM-gmCWVwDgMQHaEK?w=312&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Profile Picture" class="profile-picture">
+          <div class="hero-content">
+            <h1>Hi, I'm Natani Getnet </h1>
+            
+            <a href="#contact" class="cta-button">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p r>I am currently a third-year Bachelor’s degree student majoring in Computer Science at the American College of Technology. My academic journey has been driven by a deep passion for technology and a desire to understand the foundational principles and cutting-edge advancements in the field of computer science.</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.0Lb1uzg_QBMz9Gz4SOw6NwAAAA?pid=ImgDet&w=184&h=184&c=7&dpr=1.3" alt="Project One" width="200px" length="90">
+            <h3>Project One</h3>
+            <p>A personal portfolio using both html and css.</p>
+          </div>
+          <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.iizjlpXz3XFr38ujv8NbKQHaFl?rs=1&pid=ImgDetMain" alt="Project Two" width="300px" length="100">
+            <h3>Project Two</h3>
+            <p>A snake game that was made by using c++.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via email or connect on social media:</p>
+        <ul>
+          <li>Email: <a href="mailto:Natani12getnet@gmail.com.com">Natani12getnet@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/Natanigetnet" target="_blank">github.com/Natanigetnet</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Natani Getnet. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
